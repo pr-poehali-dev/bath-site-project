@@ -17,7 +17,12 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#3d2510]/90 backdrop-blur-sm shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="text-[#c8956a] text-3xl">🪵</div>
+          <img
+            src="https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/bucket/bdec2847-bfcb-4868-8128-2eccbeca9f39.jpg"
+            alt="Леший"
+            className="w-12 h-12 object-contain"
+            style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(10deg)' }}
+          />
           <div>
             <div className="text-[#f5efe6] font-bold text-lg leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
               Козлов & Бани
