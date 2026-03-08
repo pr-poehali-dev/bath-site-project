@@ -76,18 +76,46 @@ export default function Services() {
             <div className="text-[#c8956a] text-sm tracking-[0.3em] uppercase mb-3">Дополнительно</div>
             <h3 className="text-3xl font-bold text-[#3d2510]">Дополнительные услуги</h3>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {[
-              { icon: '🪚', title: 'Браширование', desc: 'Текстурирование поверхности древесины металлической щёткой' },
-              { icon: '🔥', title: 'Обжиг', desc: 'Обжиг древесины для защиты и декоративного эффекта' },
-              { icon: '🪵', title: 'Внутренняя отделка', desc: 'Чистовая отделка внутреннего пространства бани или сруба' },
-              { icon: '🛡️', title: 'Пропитка', desc: 'Пропитка поверхностей защитными составами от влаги и вредителей' },
-              { icon: '🪑', title: 'Мебель', desc: 'Изготовление деревянной мебели в едином стиле с постройкой' },
+              {
+                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/c0b046e4-aa32-4638-b436-ccd53057ca69.jpg',
+                title: 'Браширование',
+                desc: 'Текстурирование поверхности древесины металлической щёткой — выявляет природный рисунок дерева',
+              },
+              {
+                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/e4f9f4c4-cf25-4335-a92c-562d61e76521.jpg',
+                title: 'Обжиг',
+                desc: 'Обжиг древесины для защиты и выразительного декоративного эффекта',
+              },
+              {
+                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/3514900c-c8a9-459d-8ead-d4a22cf76a99.jpg',
+                title: 'Внутренняя отделка',
+                desc: 'Чистовая отделка внутреннего пространства бани или сруба',
+              },
+              {
+                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/5cab296e-b313-4818-a4e6-e3f445a3647a.jpg',
+                title: 'Пропитка',
+                desc: 'Натуральными составами для долговечности и защиты от атмосферных осадков',
+              },
+              {
+                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/4e14b122-acaf-421e-a207-608fb17f118e.jpg',
+                title: 'Мебель',
+                desc: 'Изготовление деревянной мебели в едином стиле с постройкой',
+              },
             ].map(item => (
-              <div key={item.title} className="bg-white border border-[#d4b896] rounded-lg p-5 text-center hover:shadow-md transition-shadow duration-200">
-                <div className="text-3xl mb-3">{item.icon}</div>
-                <h4 className="font-bold text-[#3d2510] mb-2 text-sm">{item.title}</h4>
-                <p className="text-[#8a7060] text-xs leading-relaxed">{item.desc}</p>
+              <div key={item.title} className="bg-white border border-[#d4b896] rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="h-44 overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4">
+                  <h4 className="font-bold text-[#3d2510] mb-2 text-sm">{item.title}</h4>
+                  <p className="text-[#8a7060] text-xs leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
