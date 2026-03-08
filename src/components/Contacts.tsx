@@ -16,8 +16,8 @@ const contacts = [
   {
     icon: 'Mail',
     label: 'Email',
-    value: 'Написать на почту',
-    href: 'mailto:',
+    value: 'lechei90@mail.ru',
+    href: 'mailto:lechei90@mail.ru',
   },
 ];
 

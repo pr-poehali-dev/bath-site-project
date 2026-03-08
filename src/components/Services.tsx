@@ -71,6 +71,28 @@ export default function Services() {
           ))}
         </div>
 
+        <div className="mt-10 mb-4">
+          <div className="text-center mb-8">
+            <div className="text-[#c8956a] text-sm tracking-[0.3em] uppercase mb-3">Дополнительно</div>
+            <h3 className="text-3xl font-bold text-[#3d2510]">Дополнительные услуги</h3>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {[
+              { icon: '🪚', title: 'Браширование', desc: 'Текстурирование поверхности древесины металлической щёткой' },
+              { icon: '🔥', title: 'Обжиг', desc: 'Обжиг древесины для защиты и декоративного эффекта' },
+              { icon: '🪵', title: 'Внутренняя отделка', desc: 'Чистовая отделка внутреннего пространства бани или сруба' },
+              { icon: '🛡️', title: 'Пропитка', desc: 'Пропитка поверхностей защитными составами от влаги и вредителей' },
+              { icon: '🪑', title: 'Мебель', desc: 'Изготовление деревянной мебели в едином стиле с постройкой' },
+            ].map(item => (
+              <div key={item.title} className="bg-white border border-[#d4b896] rounded-lg p-5 text-center hover:shadow-md transition-shadow duration-200">
+                <div className="text-3xl mb-3">{item.icon}</div>
+                <h4 className="font-bold text-[#3d2510] mb-2 text-sm">{item.title}</h4>
+                <p className="text-[#8a7060] text-xs leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12 bg-[#3d2510] rounded-lg p-8 text-center">
           <div className="text-3xl mb-3">🪓</div>
           <h3 className="text-2xl font-bold text-[#f5efe6] mb-3">Работа по проекту заказчика</h3>

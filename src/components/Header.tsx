@@ -25,7 +25,7 @@ export default function Header() {
           />
           <div>
             <div className="text-[#f5efe6] font-bold text-lg leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Козлов & Бани
+              Деревянное наследие
             </div>
             <div className="text-[#c8956a] text-xs tracking-widest uppercase">Рубленые срубы</div>
           </div>
