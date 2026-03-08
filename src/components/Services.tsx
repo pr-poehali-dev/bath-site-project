@@ -79,24 +79,24 @@ export default function Services() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {[
               {
-                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/c0b046e4-aa32-4638-b436-ccd53057ca69.jpg',
+                img: 'https://cdn.poehali.dev/files/b1b4c566-4d65-4897-be96-7d9a05be4f68.jpg',
                 title: 'Браширование',
                 desc: 'Текстурирование поверхности древесины металлической щёткой — выявляет природный рисунок дерева',
               },
               {
-                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/e4f9f4c4-cf25-4335-a92c-562d61e76521.jpg',
+                img: 'https://cdn.poehali.dev/files/9a95973c-becd-471d-b150-caa748266415.jpg',
                 title: 'Обжиг',
                 desc: 'Обжиг древесины для защиты и выразительного декоративного эффекта',
+              },
+              {
+                img: 'https://cdn.poehali.dev/files/37442e21-22bb-4cfa-a1f6-5f1220a335ce.jpg',
+                title: 'Пропитка',
+                desc: 'Натуральными составами для долговечности и защиты от атмосферных осадков',
               },
               {
                 img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/3514900c-c8a9-459d-8ead-d4a22cf76a99.jpg',
                 title: 'Внутренняя отделка',
                 desc: 'Чистовая отделка внутреннего пространства бани или сруба',
-              },
-              {
-                img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/5cab296e-b313-4818-a4e6-e3f445a3647a.jpg',
-                title: 'Пропитка',
-                desc: 'Натуральными составами для долговечности и защиты от атмосферных осадков',
               },
               {
                 img: 'https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/files/4e14b122-acaf-421e-a207-608fb17f118e.jpg',
