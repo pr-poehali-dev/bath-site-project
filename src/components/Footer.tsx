@@ -3,13 +3,12 @@ export default function Footer() {
     <footer className="bg-[#1a0f05] border-t border-[#3d2510] py-8">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <img
-          src="https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/bucket/bdec2847-bfcb-4868-8128-2eccbeca9f39.jpg"
+          src="https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/bucket/ec7ba694-df73-4815-a406-84d2c9859497.jpg"
           alt="Леший"
-          className="w-16 h-16 object-contain mx-auto mb-2"
-          style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(10deg)' }}
+          className="w-20 h-20 object-contain mx-auto mb-2"
         />
         <div className="text-[#f5efe6] font-bold text-lg mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
-          Козлов & Бани
+          Деревянное наследие
         </div>
         <p className="text-[#8a7060] text-sm mb-4">
           Рубленые бани и срубы ручной работы из дикого леса

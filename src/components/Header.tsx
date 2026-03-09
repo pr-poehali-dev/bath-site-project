@@ -18,10 +18,9 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img
-            src="https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/bucket/bdec2847-bfcb-4868-8128-2eccbeca9f39.jpg"
+            src="https://cdn.poehali.dev/projects/ad2c1449-2335-45e9-9660-4995e30f954d/bucket/ec7ba694-df73-4815-a406-84d2c9859497.jpg"
             alt="Леший"
             className="w-12 h-12 object-contain"
-            style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(10deg)' }}
           />
           <div>
             <div className="text-[#f5efe6] font-bold text-lg leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
