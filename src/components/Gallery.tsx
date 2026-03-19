@@ -78,6 +78,38 @@ export default function Gallery() {
           </div>
         </div>
 
+        <div className="mt-16 mb-10">
+          <div className="text-center mb-8">
+            <div className="text-[#c8956a] text-sm tracking-[0.3em] uppercase mb-3">Отделка</div>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#f5efe6] mb-3">Обжиг дерева</h3>
+            <p className="text-[#c8956a] text-base max-w-xl mx-auto">
+              Термическая обработка огнём — защита от влаги и насекомых, уникальный тёмный рельеф с живым узором
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: 'https://cdn.poehali.dev/files/7516305e-89a7-40e2-be11-843387e77687.jpg', caption: 'Обжиг — эффект горящего дерева' },
+              { src: 'https://cdn.poehali.dev/files/08d8ad46-1b01-44ea-a8de-b593288f99c1.jpg', caption: 'Обожжённая поверхность с трещинами' },
+              { src: 'https://cdn.poehali.dev/files/5d38812d-5343-4462-b596-bc4af58691d0.jpg', caption: 'Текстура дерева после обжига' },
+            ].map((photo, i) => (
+              <div
+                key={i}
+                className="relative group overflow-hidden rounded-lg aspect-square cursor-pointer"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.caption}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a0f05]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-[#f5efe6] text-sm font-medium translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  {photo.caption}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center mt-10">
           <p className="text-[#e8d5b7] text-sm">
             Больше фотографий — обращайтесь напрямую к мастеру
