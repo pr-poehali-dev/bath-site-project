@@ -110,6 +110,40 @@ export default function Gallery() {
           </div>
         </div>
 
+        <div className="mt-16 mb-10">
+          <div className="text-center mb-8">
+            <div className="text-[#c8956a] text-sm tracking-[0.3em] uppercase mb-3">Отделка</div>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#f5efe6] mb-3">Пропитка поверхности</h3>
+            <p className="text-[#c8956a] text-base max-w-xl mx-auto">
+              Фирменный состав из натуральных компонентов — защита дерева от атмосферных осадков и УФ-излучения с сохранением живой текстуры
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: 'https://cdn.poehali.dev/files/ac494eb5-1eff-4388-ba8e-5dc7137734f5.jpg', caption: 'Брёвна сруба — пропитка фирменным составом' },
+              { src: 'https://cdn.poehali.dev/files/ab5bb271-4328-45e5-a840-521441cf3e21.png', caption: 'Нанесение состава — до и после' },
+              { src: 'https://cdn.poehali.dev/files/a56a8e52-5c5c-486b-a626-0f2c7ededb41.jpg', caption: 'Обработка угловых соединений сруба' },
+              { src: 'https://cdn.poehali.dev/files/361cae95-bbfe-42b2-acb7-c80cdc2029da.jpg', caption: 'Водоотталкивающий эффект после пропитки' },
+              { src: 'https://cdn.poehali.dev/files/23f9aee1-ccb0-49f4-8f26-da4861963bf4.jpg', caption: 'Состав проникает в структуру дерева' },
+            ].map((photo, i) => (
+              <div
+                key={i}
+                className="relative group overflow-hidden rounded-lg aspect-square cursor-pointer"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.caption}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a0f05]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-[#f5efe6] text-sm font-medium translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  {photo.caption}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center mt-10">
           <p className="text-[#e8d5b7] text-sm">
             Больше фотографий — обращайтесь напрямую к мастеру
