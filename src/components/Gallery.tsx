@@ -44,6 +44,40 @@ export default function Gallery() {
           ))}
         </div>
 
+        <div className="mt-16 mb-10">
+          <div className="text-center mb-8">
+            <div className="text-[#c8956a] text-sm tracking-[0.3em] uppercase mb-3">Отделка</div>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#f5efe6] mb-3">Браширование поверхности</h3>
+            <p className="text-[#c8956a] text-base max-w-xl mx-auto">
+              Ручная обработка металлической щёткой — текстура дерева раскрывается, поверхность приобретает рельеф и благородный вид
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { src: 'https://cdn.poehali.dev/files/5aa556fd-46a5-46ba-b9a2-0c4d8c33e93c.jpg', caption: 'Браширование — рельефная поверхность' },
+              { src: 'https://cdn.poehali.dev/files/d282eaf6-e247-4d26-b780-b5a0d1871276.jpg', caption: 'Брашированная доска после обработки' },
+              { src: 'https://cdn.poehali.dev/files/589e397b-6bc7-447e-a5a5-f5612e589484.jpg', caption: 'Текстура дерева после браширования' },
+              { src: 'https://cdn.poehali.dev/files/8ead7183-54ed-41d0-9299-38302f0af134.jpg', caption: 'Угловой стык — брашированный сруб' },
+              { src: 'https://cdn.poehali.dev/files/340b8133-ef36-4743-8e13-f5e56b1c4195.jpg', caption: 'Состаренное дерево — вид крупно' },
+            ].map((photo, i) => (
+              <div
+                key={i}
+                className="relative group overflow-hidden rounded-lg aspect-square cursor-pointer"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.caption}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a0f05]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-[#f5efe6] text-sm font-medium translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  {photo.caption}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center mt-10">
           <p className="text-[#e8d5b7] text-sm">
             Больше фотографий — обращайтесь напрямую к мастеру
