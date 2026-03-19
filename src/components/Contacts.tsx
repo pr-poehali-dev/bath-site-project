@@ -4,14 +4,20 @@ const contacts = [
   {
     icon: 'Phone',
     label: 'Телефон',
-    value: '+7 (920) 621-21-40',
-    href: 'tel:+79206212140',
+    value: '+7 (920) 626-04-61',
+    href: 'tel:+79206260461',
   },
   {
     icon: 'Send',
     label: 'Telegram',
     value: '+7 (901) 192-66-87',
     href: 'https://t.me/+79011926687',
+  },
+  {
+    icon: 'MessageCircle',
+    label: 'Max',
+    value: '+7 (901) 192-66-87',
+    href: 'https://max.ru/+79011926687',
   },
   {
     icon: 'Mail',
